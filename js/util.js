@@ -17,6 +17,10 @@ function setMinesRandomly() {
   for (var idx = 0; idx < gGame.difficulty.MINES; idx++) {
     var i = Math.floor(Math.random() * (max - min) + min);
     var j = Math.floor(Math.random() * (max - min) + min);
+    while (gBoard[i][j].isMine) {
+      i = Math.floor(Math.random() * (max - min) + min);
+      j = Math.floor(Math.random() * (max - min) + min);
+    }
     gBoard[i][j].isMine = true;
     gGame.minesCoords.push({ i: i, j: j });
   }
