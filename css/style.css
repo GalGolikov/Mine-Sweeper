@@ -1,0 +1,81 @@
+body {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+table,
+.game-status,
+.timer {
+  margin: auto;
+}
+.board {
+  box-shadow: 10px 10px 8px 10px #888888;
+}
+.cell {
+  height: 50px;
+  width: 50px;
+  background-color: lightgrey;
+  border: solid white 1px;
+}
+
+.cell img {
+  width: 45px;
+  height: auto;
+}
+
+.cell:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+.shown {
+  background-color: darkgrey;
+  border: solid grey 1px;
+}
+
+.shown:hover {
+  background-color: darkgrey;
+  cursor: default;
+}
+
+.difficulty-level button {
+  border-radius: 5px;
+}
+.timer {
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  color: chocolate;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.marked {
+  background-color: rgb(236, 236, 169);
+}
+.marked:hover {
+  background-color: rgb(236, 236, 169);
+  cursor: not-allowed;
+}
+.game-status {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.game-status img {
+  width: 90%;
+  height: auto;
+}
+.mine {
+  background-color: red;
+}
+.mine:hover {
+  background-color: red;
+  cursor: default;
+}
+.lives-container {
+  font-size: large;
+  font-weight: bold;
+}
